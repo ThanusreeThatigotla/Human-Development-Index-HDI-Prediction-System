@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>HDI Prediction</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.8)
+    ),
+    url('https://images.unsplash.com/photo-1451187580459-43490279c0fa');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    min-height:100vh;
+}
+
+.container{
+
+    width:520px;
+
+    padding:35px;
+
+    background:
+    rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:20px;
+
+    box-shadow:
+    0 8px 32px rgba(0,0,0,0.5);
+}
+
+h1{
+
+    color:white;
+
+    text-align:center;
+
+    margin-bottom:20px;
+}
+
+input{
+
+    width:100%;
+
+    padding:15px;
+
+    margin:10px 0;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:30px;
+
+    background:
+    rgba(255,255,255,0.15);
+
+    color:white;
+
+    font-size:16px;
+}
+
+input::placeholder{
+    color:#ddd;
+}
+
+input:focus{
+
+    border:2px solid #00f2fe;
+
+    box-shadow:
+    0 0 10px #00f2fe;
+}
+
+button{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-top:20px;
+
+    border:none;
+
+    border-radius:30px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    color:white;
+
+    cursor:pointer;
+
+    background:
+    linear-gradient(
+        45deg,
+        #ff416c,
+        #ff4b2b
+    );
+
+    transition:0.3s;
+}
+
+button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 5px 20px
+    rgba(255,75,43,0.5);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>
+Human Development Index Prediction
+</h1>
+
+<form action="/predict" method="POST">
+
+<input type="text"
+name="Life_Expectancy"
+placeholder="Life Expectancy"
+required>
+
+<input type="text"
+name="Expected_Years_Schooling"
+placeholder="Expected Years Schooling"
+required>
+
+<input type="text"
+name="Mean_Years_Schooling"
+placeholder="Mean Years Schooling"
+required>
+
+<input type="text"
+name="GNI_per_Capita"
+placeholder="GNI per Capita"
+required>
+
+<input type="text"
+name="Human_Inequality"
+placeholder="Human Inequality"
+required>
+
+<input type="text"
+name="Adult_Literacy"
+placeholder="Adult Literacy"
+required>
+
+<input type="text"
+name="Internet"
+placeholder="Internet Users"
+required>
+
+<input type="text"
+name="Electricity"
+placeholder="Electricity Access"
+required>
+
+<input type="text"
+name="Healthy_LE"
+placeholder="Healthy Life Expectancy"
+required>
+
+<input type="text"
+name="Social_Support"
+placeholder="Social Support"
+required>
+
+<button type="submit">
+Predict HDI
+</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
