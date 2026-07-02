@@ -2,11 +2,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pickle
-
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score
-
 from flask import Flask, render_template, request
 
 # ==========================
