@@ -160,7 +160,8 @@ HDI-Prediction-System/
 ### Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/HDI-Prediction-System.git
+git clone
+https://github.com/ThanusreeThatigotla/Human-Development-Index-HDI-Prediction-System/edit/main/README.md
 ```
 
 ### Navigate to project directory
